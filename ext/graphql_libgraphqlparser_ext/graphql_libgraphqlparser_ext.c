@@ -41,7 +41,7 @@ void Init_graphql_libgraphqlparser_ext() {
   Libgraphqlparser_ParseError = rb_define_class_under(Libgraphqlparser, "ParseError", rb_eStandardError);
   Libgraphqlparser_Builder = rb_const_get(Libgraphqlparser, rb_intern("Builder"));
 
-  init_visitor_functions();
+  init_visitor_functions(Libgraphqlparser);
   // Attach the functions to the Callbacks struct
   ATTACH_CALLBACKS(document);
   ATTACH_CALLBACKS(operation_definition);

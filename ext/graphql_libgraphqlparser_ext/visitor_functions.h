@@ -5,7 +5,7 @@
   int snake_name##_begin_visit(const struct GraphQLAst##camel_name* document, void* builder_ptr); \
   void snake_name##_end_visit(const struct GraphQLAst##camel_name* document, void* builder_ptr); \
 
-void init_visitor_functions();
+void init_visitor_functions(VALUE Libgraphqlparser);
 VISITOR_CALLBACKS(document, Document);
 VISITOR_CALLBACKS(operation_definition, OperationDefinition);
 VISITOR_CALLBACKS(variable_definition, VariableDefinition);

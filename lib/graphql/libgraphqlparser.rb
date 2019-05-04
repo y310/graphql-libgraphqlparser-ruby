@@ -1,5 +1,6 @@
 require 'graphql'
 require 'graphql/libgraphqlparser/builder'
+require 'graphql/libgraphqlparser/position_source'
 require 'graphql/libgraphqlparser/monkey_patches/abstract_node'
 require 'graphql/libgraphqlparser/version'
 require_relative '../graphql_libgraphqlparser_ext'
